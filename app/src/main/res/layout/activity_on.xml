@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onActivity">
+
+<include layout="@layout/titlelayout"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="描述（100字以内）"
+        android:minLines="5"
+        android:maxLines="10"
+        android:maxLength="100"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="资金金额(不填默认为0)"
+        android:id="@+id/money"
+        />
+11
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="物资(不填默认为无)"
+        android:id="@+id/thing"
+        />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="允许申请数（数字）"
+        android:maxLength="100"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赞助"
+        android:id="@+id/spo"
+        />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="合作"
+        android:id="@+id/cop"
+        />
+    </RadioGroup>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="截止时间"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择范围"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/roption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/activityt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="意向活动类型"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/activitytype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="确认发布"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="#ffe255"/>
+
+</LinearLayout>
+    </ScrollView>
